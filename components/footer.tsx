@@ -1,118 +1,15 @@
 import Link from "next/link"
+import { Youtube } from 'lucide-react'
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-secondary/20">
-      <div className="container py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          <div>
-            <h3 className="font-semibold mb-4">产品</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  功能
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  定价
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  API
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  更新日志
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className="container flex flex-col items-center px-8 py-12 md:py-16">
+        
 
-          <div>
-            <h3 className="font-semibold mb-4">公司</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  关于
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  博客
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  招聘
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  联系
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">资源</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  文档
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  帮助中心
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  社区
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  状态
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">法律</h3>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  隐私
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  条款
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  安全
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-foreground transition-colors">
-                  Cookie
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="text-2xl">🍌</span>
+            <Youtube className="h-8 w-8 text-red-500" />
             <span className="font-bold">从YouTube学习</span>
           </div>
 
