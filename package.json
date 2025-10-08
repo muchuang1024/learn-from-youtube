@@ -61,7 +61,7 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "undici": "^7.16.0",
-    "vaul": "^0.9.9",
+    "vaul": "^1.1.2",
     "youtube-caption-extractor": "^1.9.1",
     "youtube-transcript": "^1.2.1",
     "youtube-transcript-plus": "^1.1.1",
