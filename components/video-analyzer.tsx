@@ -71,12 +71,12 @@ export function VideoAnalyzer() {
           {analysis && (
             <Card>
               <CardHeader>
-                <CardTitle>分析结果</CardTitle>
+                <CardTitle>字幕内容</CardTitle>
               </CardHeader>
               <CardContent>
-                <pre className="p-4 bg-gray-100 dark:bg-gray-800 rounded-md overflow-x-auto">
-                  {JSON.stringify(analysis, null, 2)}
-                </pre>
+                <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-md overflow-y-auto max-h-96">
+                  {analysis.transcript}
+                </div>
               </CardContent>
             </Card>
           )}
